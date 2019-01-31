@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Source+Sans+Pro:400,700,900');
+
+/* 기본 Box Sizing 변경 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* 스타일 초기화(Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main{
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 본문 스타일 */
+html{
+	font-size: 10px; 
+}
+body{
+	font-size: 1.6rem;
+	color: #222222;
+	background-color: #E9EDEF;
+	line-height: 1.15;
+	font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Noto Serif', serif; */
+}
+/* 하이퍼링크 */
+a{
+	color: inherit; 
+	text-decoration: none;
+	/* text-decoration-style: wavy; */
+}
+/* ------------------------
+				클래스 모듈 
+-------------------------*/
+.txt1{
+	font-size: 5rem;
+}
+/* 클래스 모듈 */
+.txt2{
+	font-size: 4.8rem;
+}
+.txt3{
+	font-size: 2.2rem;
+}
+.txt4{
+	font-size: 1.8rem;
+}
+.txt5{
+	font-size: 1.2rem;
+}
+.noto{
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+}
+/* ======================
+           MAIN
+========================*/
+.container{
+  /* border: 1px solid yellow; */
+  display: flex;
+  padding: 2em;
+}
+@media screen and (min-width:1px) and (max-width:768px){
+  .container{
+    flex-direction: column;
+  }
+  .container .header-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color:yellow;
+    width: 100%;
+  }
+  .navigation ul{
+    display: flex;
+  }
+  .content{
+    width: 100%;
+  }
+  .portfolio{
+    width: 100% !important;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+.header-nav-wrapper{
+  border: 1px solid blue;
+  width: 25%;
+  text-align: center;
+  padding: 2em;
+}
+.block{
+  display: block;
+}
+.logo{
+  border: 1px solid red;
+}
+.header a{
+  border: 1px solid red;
+  
+}
+.aboutme{
+  display: none;
+}
+.navigation{
+  border: 1px solid red;
+  padding: 50px;
+}
+
+.navigation ul li{
+  /* display: inline-block; */
+  margin: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  
+}
+.navigation a:hover{
+  box-shadow: 0 1px 0 0 currentColor;
+}
+.main-footer-wrapper{
+  /* border: 1px solid blue; */
+  width: 75%;
+}
+
+
+.portfolio{
+  border: 1px solid #DBE0E6;
+  background-color: #fff;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 2em;
+
+}
+.brief{
+  padding: 3em;
+  border: 1px solid red;
+  width: 60%;
+}
+.brief .title{
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 0.5em;
+}
+.brief .detail{
+  color: #555;
+  /* border: 1px solid red; */
+  margin-bottom: 1em;
+}
+.tlink{
+  color: #F16C6A;
+
+}
+.tlink:hover{
+  box-shadow: 0 1px 0 0 currentColor;
+
+}
+.content{
+  /* width: 1000px; */
+}
+.thumnail{
+  /* padding: 4em; */
+  border: 1px solid red;
+  /* text-align: center; */
+  width: 30%;
+}
+.thumnail img{
+  width: 100%;
+  height: auto;
+}
+.footer{
+  /* border: 1px solid black; */
+}
+
